@@ -1,3 +1,11 @@
+# Environments
+.env
+.venv
+.vscode
+
+# Project
+data.json
+
 # Distribution / packaging
 .Python
 build/
@@ -18,31 +26,4 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
-
-
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.nox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.py,cover
-.hypothesis/
-.pytest_cache/
-
-# pyenv
-.python-version
-
-# Environments
-.env
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
-.vscode
+__pycache__
