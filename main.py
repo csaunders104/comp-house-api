@@ -1,22 +1,17 @@
 import os.path
-import api
+import utils as u
 import answers as a
 import globals as g
 
-file_exists: bool = os.path.exists(g.json_file)
+file_exists: bool = os.path.exists(g.csv_file)
 
 def main():
-    '''Collect everything together. Either create
-    data.json or use already existing to save time'''
+    '''Calls two functions'''
+    '''1. Reads and manipulates data'''
+    '''2. Answers questions and collates them into one output'''
 
-    # checks if data already exists in path
-    if file_exists is False:
-        df = api.read_from_api()
-    if file_exists is True:
-        df = api.read_from_json()
-
-    run = a.Answers()
-    run.collate_answers(df)
+    df = u.handler()
+    a.collate_answers(df)
 
 if __name__ == "__main__":
     main()
