@@ -4,7 +4,7 @@
 .vscode
 
 # Project
-csv.json
+data.csv
 
 # Distribution / packaging
 __pycache__
